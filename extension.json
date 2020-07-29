@@ -1,0 +1,37 @@
+{
+    "name": "GitHubImage",
+    "author": "[https://github.com/Xzonn/ Xzonn]",
+    "url": "https://github.com/Xzonn/GitHubImage",
+    "descriptionmsg": "xz-ghi-desc",
+	"license-name": "WTFPL",
+    "type": "media",
+	"requires": {
+		"MediaWiki": ">= 1.31.0"
+	},
+    "version": "0.1.0",
+    "manifest_version": 1,
+    "MessagesDirs": {
+        "GitHubImage": [
+            "i18n"
+        ]
+    },
+    "Hooks": {
+        "LinkerMakeMediaLinkFile": "GitHubImage::onLinkerMakeMediaLinkFile"
+    },
+    "AutoloadClasses": {
+        "GitHubImage": "includes/GitHubImage.php",
+        "XzImageHandler": "includes/XzImageHandler.php",
+        "XzSvgHandler": "includes/XzImageHandler.php"
+    },
+	"MediaHandlers": {
+		"image/jpeg": "XzImageHandler",
+		"image/png": "XzImageHandler",
+		"image/gif": "XzImageHandler",
+        "image/webp": "XzImageHandler",
+        "image/svg": "XzSvgHandler"
+    },
+    "config": {
+        "XzGhiUsername": "Xzonn",
+        "XzGhiRepo": "xz-images"
+    }
+}
