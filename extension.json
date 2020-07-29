@@ -8,8 +8,8 @@
 	"requires": {
 		"MediaWiki": ">= 1.31.0"
 	},
-    "version": "0.1.0",
-    "manifest_version": 1,
+    "version": "0.2.0",
+    "manifest_version": 2,
     "MessagesDirs": {
         "GitHubImage": [
             "i18n"
@@ -32,6 +32,7 @@
     },
     "config": {
         "XzGhiUsername": "Xzonn",
-        "XzGhiRepo": "xz-images"
+        "XzGhiRepo": "xz-images",
+        "XzHashed": false
     }
 }
